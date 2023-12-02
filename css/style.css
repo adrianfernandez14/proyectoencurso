@@ -1,0 +1,86 @@
+/*FORMATO A USAR EN TODO EL SITIO WEB*/
+
+html {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body {
+    background-color: white;
+
+}
+
+/*MODIFICACIONES EN EL HEADER*/
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 15%;
+    
+}
+
+header h1 {
+    background-color: aquamarine;
+    font-size: 4rem;
+    text-align: center;
+    background-size: 4rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+/*MODIFICACIONES EN MI FOOTER*/
+
+
+
+footer ol{
+    font-size: 20px;
+    list-style-type: none;
+    text-align: right;
+}
+
+footer p{
+    font-size: 15px;
+    font-style: italic;
+}
+
+/*CLASES Y MODIF DE TEXTOS E IMAGENES*/
+
+.img-encuadra {
+    width: 40%;
+}
+
+.img-pequenia{
+    width:15%;
+}
+
+p{  
+    text-align: justify;
+    font-size: 20px;
+    color: seagreen;
+}
+
+.text-llamativo{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.text-centrado{
+    color: darkslategrey;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: underline;
+}
+
+section{
+    text-align: center;
+}
+
+
+
