@@ -40,7 +40,7 @@ header nav ul {
 footer ol{
     font-size: 20px;
     list-style-type: none;
-    text-align: right;
+
 }
 
 footer p{
@@ -48,10 +48,19 @@ footer p{
     font-style: italic;
 }
 
+footer{
+    display: inline-block;
+    text-align: center;
+
+}
+
+footer ol div li a{
+    display: inline-block;
+}
 /*CLASES Y MODIF DE TEXTOS E IMAGENES*/
 
-.img-encuadra {
-    width: 40%;
+.img-encuadra{
+    width: 60%
 }
 
 .img-pequenia{
@@ -76,11 +85,51 @@ p{
     text-align: center;
     text-decoration: overline;
     text-decoration: underline;
-}
-
-section{
-    text-align: center;
+    justify-content: center;
 }
 
 
 
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 25%);
+    
+    gap: 3rem;
+    
+    row-gap: 10px;
+}
+
+main section div{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.poner-delado{
+    display: flex;
+    align-items: center;
+}
+
+
+.text-alejado{
+    text-align: right;
+}
+
+.text-izquierda{
+    text-align: left;
+}
