@@ -125,6 +125,12 @@ img {
     align-items: center;
 }
 
+<<<<<<< HEAD:docs/css/style.css
+=======
+span p {
+    margin-right: 20px;
+}
+>>>>>>> modificado2:css/style.css
 
 .text-alejado{
     text-align: right;
