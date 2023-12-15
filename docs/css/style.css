@@ -78,6 +78,17 @@ p{
     text-align: justify;
     font-size: 20px;
     color: seagreen;
+    margin-bottom: 10px;
+}
+
+.imagen-conteiner {
+    display:flex;
+
+}
+
+.imagen-conteiner img {
+    margin-right: 10px;
+
 }
 
 .text-llamativo{
