@@ -106,7 +106,54 @@ main section div img{
 .uno{
  grid-column: 1 / 3;
  grid-row: 1 / 5;
+}
 
+.uno-b{
+    grid-column: 1 / 4;
+}
+
+.uno-c {
+ grid-row: 2 / 3;
+}
+
+.uno-d{
+    grid-row: 3 / 4;
+}
+
+.uno-e{
+    grid-row: 4 / 5;
+}
+
+.uno-f{
+    grid-row: 5 / 6;
+}
+
+.uno-g{
+    grid-row: 6 / 7;
+}
+
+.dos-b{
+    grid-column: 4 / 7;
+}
+
+.dos-c{
+    grid-row: 2 / 3;
+}
+
+.dos-d{
+    grid-row: 3 / 4;
+}
+
+.dos-e{
+    grid-row: 4 / 5;
+}
+
+.dos-f{
+    grid-row: 5 / 6;
+}
+
+.dos-g{
+    grid-row: 6 / 7;
 }
 
 .dos{
@@ -137,19 +184,14 @@ main section div img{
 
 .contenedor-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 25%);
-    
-    gap: 3rem;
-    
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: repeat(8, 200px);
+    column-gap: 10px;    
     row-gap: 10px;
+    margin: 15px;
+    justify-content: center;
 }
 
-main section div{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .contenedor{
     display: grid;
