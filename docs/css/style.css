@@ -36,27 +36,34 @@ header nav ul {
 /*MODIFICACIONES EN MI FOOTER*/
 
 
-
-footer ol{
-    font-size: 20px;
-    list-style-type: none;
-
-}
-
 footer p{
     font-size: 15px;
     font-style: italic;
 }
 
-footer{
-    display: inline-block;
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
     text-align: center;
-
+  }
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-footer ol div li a{
+  
+nav li {
     display: inline-block;
+    margin-right: 10px; /* Espacio entre los enlaces */
 }
+  
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 /*CLASES Y MODIF DE TEXTOS E IMAGENES*/
 
 .img-encuadra{
@@ -123,14 +130,14 @@ img {
 .poner-delado{
     display: flex;
     align-items: center;
+    gap: 4rem;
 }
 
-<<<<<<< HEAD:docs/css/style.css
-=======
-span p {
-    margin-right: 20px;
+.flex {
+    display: flexbox;
+    align-items: center;
+    order: 0;
 }
->>>>>>> modificado2:css/style.css
 
 .text-alejado{
     text-align: right;
