@@ -3,7 +3,7 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-    margin: 15px;
+    margin: 25px;
 
 }
 
@@ -65,7 +65,7 @@ nav a {
     font-weight: bold;
 }
 
-/*CLASES Y MODIF DE TEXTOS E IMAGENES*/
+/*CLASES Y MODIF DE TEXTOS, ENLACES E IMAGENES*/
 
 .img-encuadra{
     width: 60%
@@ -106,6 +106,33 @@ main section div img{
     display: block;
 }
 
+.text-llamativo{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.text-centrado{
+    color: darkslategrey;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.text-alejado{
+    text-align: right;
+}
+
+.text-izquierda{
+    text-align: left;
+}
+
+.enlace:hover{
+    color: chartreuse;
+}
+
 /* CLASES PARA ACOMODAR LAS IMAGENES EN EL GRID */
 
 .uno{
@@ -128,20 +155,6 @@ main section div img{
 
 }
 
-.text-llamativo{
-    font-weight: bolder;
-    text-decoration: underline;
-    font-size: 2rem;
-}
-
-.text-centrado{
-    color: darkslategrey;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: overline;
-    text-decoration: underline;
-    justify-content: center;
-}
 
 .contenedor-grid{
     display: grid;
@@ -184,13 +197,7 @@ img {
     align-items: flex-end;
 }
 
-.text-alejado{
-    text-align: right;
-}
 
-.text-izquierda{
-    text-align: left;
-}
 
 @media only screen and (max-width: 500px){
     header h1{
