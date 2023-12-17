@@ -1,10 +1,148 @@
+/*FORMATO A USAR EN TODO EL SITIO WEB*/
+html {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin: 25px; }
+  html body {
+    background-color: white; }
+
+/*MODIFICACIONES EN EL HEADER*/
 header {
-  font-size: 100px; }
+  text-align: center; }
+  header img {
+    width: 15%; }
+  header h1 {
+    background-color: aquamarine;
+    font-size: 4rem;
+    text-align: center;
+    background-size: 6rem; }
+
+/*MODIFICACIONES EN MI FOOTER*/
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center; }
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  footer nav li {
+    display: inline-block;
+    margin-right: 10px; }
+  footer nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; }
+  footer p {
+    font-size: 15px;
+    font-style: italic; }
+
+/*CLASES Y ESTILOS EN TEXTOS E IMAGENES*/
+.img-encuadra {
+  width: 60%; }
+
+.img-pequenia {
+  width: 15%; }
 
 p {
-  color: 0 div;
-    background-color: yellow; }
+  font-size: 20px;
+  color: darkslategray;
+  margin-bottom: 10px; }
+
+.imagen-conteiner {
+  display: flex; }
+
+.imagen-conteiner-m .imagen-item {
+  font-size: 21px;
+  padding: 5px; }
+
+main section div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+
+.text-llamativo {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 2rem; }
+
+.text-centrado {
+  color: darkslategrey;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: overline;
+  text-decoration: underline;
+  justify-content: center; }
+
+.text-alejado {
+  text-align: right; }
+
+.text-izquierda {
+  text-align: left; }
+
+.enlace:hover {
+  color: chartreuse; }
+
+/* CLASES PARA ACOMODAR LAS IMAGENES EN EL GRID */
+.uno {
+  grid-column: 1 / 3;
+  grid-row: 1 / 5; }
+
+.uno-b, .dos-b {
+  overflow: hidden; }
+
+.dos {
+  grid-column: 3 / 6;
+  grid-row: 1 / 5; }
+
+.imagen-conteiner img {
+  margin-right: 10px; }
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 30px; }
+
+.contenedor1 {
+  display: flex; }
 
 img {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+.imagen-item {
+  justify-content: center; }
+
+.poner-delado {
+  display: flex;
+  align-items: center;
+  gap: 4rem; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end; }
+
+@media only screen and (max-width: 500px) {
+  header h1 {
+    font-size: 40px; }
+  .mq-mobile {
+    font-size: 15px; }
+  .mq-mobile-t {
+    font-size: 9px; }
+  .text-llamativo-mq {
+    font-size: 27px; }
+  #img-uno {
+    display: none; }
+  footer {
+    font-size: 12px; } }
