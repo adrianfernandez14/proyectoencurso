@@ -178,4 +178,10 @@ img {
   .img-pequenia {
     display: none; }
   .poner-delado {
-    display: inline-block; } }
+    display: inline-block; }
+  .text-izquierda {
+    text-align: center; }
+  .text-alejado {
+    text-align: center; }
+  #ignorar-text {
+    display: none; } }
