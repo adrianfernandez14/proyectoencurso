@@ -22,7 +22,7 @@
 /*FORMATO A USAR EN TODO EL SITIO WEB*/
 html {
   color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   margin: 25px; }
   html body {
@@ -37,7 +37,8 @@ header {
     background-color: aquamarine;
     font-size: 4rem;
     text-align: center;
-    background-size: 6rem; }
+    background-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*MODIFICACIONES EN MI FOOTER*/
 footer {
@@ -58,6 +59,8 @@ footer {
   footer p {
     font-size: 15px;
     font-style: italic; }
+  footer .enlace:hover {
+    color: chartreuse; }
 
 /*CLASES Y ESTILOS EN TEXTOS E IMAGENES*/
 .img-encuadra {
@@ -90,7 +93,7 @@ main section div img {
   font-size: 2rem; }
 
 .text-centrado {
-  color: darkslategrey;
+  color: darkslategray;
   font-weight: bold;
   text-align: center;
   text-decoration: overline;
@@ -102,9 +105,6 @@ main section div img {
 
 .text-izquierda {
   text-align: left; }
-
-.enlace:hover {
-  color: chartreuse; }
 
 /* CLASES PARA ACOMODAR LAS IMAGENES EN EL GRID */
 .uno {

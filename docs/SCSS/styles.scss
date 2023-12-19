@@ -1,12 +1,15 @@
 /*IMPORT*/
 
-@import "Variables/contacto";
+@import "extras/contacto";
+@import "extras/color";
+@import "extras/fuente";
+@import "extras/mixin";
 
 /*FORMATO A USAR EN TODO EL SITIO WEB*/
 
 html {
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $color_secundario;
+    font-family: $fuente_principal;
     font-size: 20px;
     margin: 25px;
     body {
@@ -22,10 +25,11 @@ header {
         width: 15%;
     }
     h1{
-        background-color: aquamarine;
+        background-color: $color_fondotitulo;
         font-size: 4rem;
         text-align: center;
         background-size: 6rem;
+        font-family: $fuente_header;
     }
 
 }
@@ -33,29 +37,7 @@ header {
 /*MODIFICACIONES EN MI FOOTER*/
 
 footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    nav{
-        ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li{
-           display: inline-block;
-           margin-right: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-    }
-    p{
-        font-size: 15px;
-        font-style: italic;
-    }
+    @include footer1
 }
 /*CLASES Y ESTILOS EN TEXTOS E IMAGENES*/
 
@@ -69,7 +51,7 @@ footer {
 
 p {
     font-size: 20px;
-    color: darkslategray;
+    color: $color_principal;
     margin-bottom: 10px;
 }
 
@@ -102,7 +84,7 @@ main{
 }
 
 .text-centrado{
-    color: darkslategrey;
+    color: $color_principal;
     font-weight: bold;
     text-align: center;
     text-decoration: overline;
@@ -116,10 +98,6 @@ main{
 
 .text-izquierda{
     text-align: left;
-}
-
-.enlace:hover{
-    color: chartreuse;
 }
 
 /* CLASES PARA ACOMODAR LAS IMAGENES EN EL GRID */
