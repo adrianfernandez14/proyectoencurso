@@ -74,24 +74,28 @@
         <!-- Seccion de formulario para enviar un mensaje -->
 
         
-         <form action="form.php" method="post">
-           <p>
-            <label for="">Nombre</label>
-           <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
-           </p>
-           <p>
-            <label for="">E-mail</label>
-           <input type="text" name="e-mail" id="E-mail" placeholder="E-mail">
-           </p>
-           <p>
-            <label for="">Telefono</label>
-           <input type="number" name="telefono" id="Telefono" placeholder="Telefono">
-           </p>
-           <p>Mensaje
-           </p>
-           <textarea name="" id="" cols="30" rows="10"></textarea>
-           <input type="submit" value="Enviar">
-         </form>
+        <form class="formulario-conteiner" action="form.php" method="post">
+          <p>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+          </p>
+          <p>
+            <label for="E-mail">E-mail</label>
+            <input type="email" name="e-mail" id="E-mail" placeholder="E-mail" required>
+          </p>
+          <p>
+            <label for="Telefono">Telefono</label>
+            <input type="tel" name="telefono" id="Telefono" placeholder="Telefono" required>
+          </p>
+          <p>
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="mensaje" id="Mensaje" cols="30" rows="10" required></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+          </p>
+        </form>
+        
         
 
     </main>
