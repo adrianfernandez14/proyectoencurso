@@ -160,11 +160,17 @@ img {
     justify-content: space-evenly;
     align-items: flex-end;
 }
-   
+/*MQ MOBILE*/   
    @media only screen and (max-width: 500px){
-       header h1{
-           font-size: 40px;
-       }
+       header{
+            h1{
+                font-size: 40px;
+            }
+            img{
+                width: 25%;
+            }
+
+        }
        .mq-mobile{
            font-size: 15px;
        }
@@ -177,8 +183,21 @@ img {
        #img-uno{
            display: none;
        }
+       #img-dos{
+        display: none;
+       }
        footer{
            font-size: 12px;
+       }
+       .contenedor-grid{
+            grid-template-columns: 1fr; 
+            justify-items: center;
+       }
+       .img-pequenia{
+        display: none;
+       }
+       .poner-delado{
+        display: inline-block;
        }
            
    }
