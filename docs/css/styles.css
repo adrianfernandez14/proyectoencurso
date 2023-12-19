@@ -184,4 +184,10 @@ img {
   .text-alejado {
     text-align: center; }
   #ignorar-text {
+    display: none; }
+  iframe {
+    display: none; }
+  .formulario-conteiner {
+    display: block; }
+  main div div br {
     display: none; } }
