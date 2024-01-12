@@ -29,16 +29,33 @@ html {
     background-color: #FEF9F5; }
 
 /*MODIFICACIONES EN EL HEADER*/
-header {
-  text-align: center; }
-  header img {
-    width: 15%; }
-  header h1 {
-    background-color: #39C1FF;
-    font-size: 4rem;
-    text-align: center;
-    background-size: 6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+@keyframes aumento {
+  0% {
+    height: 0.5rem; }
+  15% {
+    height: 1rem; }
+  30% {
+    height: 1.5rem; }
+  50% {
+    height: 2rem; }
+  65% {
+    height: 2.5rem; }
+  80% {
+    height: 3rem; }
+  100% {
+    height: 4rem; } }
+
+header a img {
+  width: 25%; }
+
+header h1 {
+  background-color: #39C1FF;
+  font-size: 4rem;
+  text-align: center;
+  background-size: 6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation-name: aumento;
+  animation-duration: 1s; }
 
 /*MODIFICACIONES EN MI FOOTER*/
 footer {
@@ -63,11 +80,37 @@ footer {
     color: chartreuse; }
 
 /*CLASES Y ESTILOS EN TEXTOS E IMAGENES*/
+@keyframes agranda_img {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(2, 2); }
+  100% {
+    transform: scale(1, 1); } }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#img-uno:hover {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+
+#img-tres:hover {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+
 .img-encuadra {
   width: 60%; }
 
 .img-pequenia {
   width: 20%; }
+
+.img-pequenia:hover {
+  animation-name: agranda_img;
+  animation-duration: 1s; }
 
 p {
   font-size: 20px;
@@ -107,12 +150,30 @@ main section div img {
   text-align: left; }
 
 /* CLASES PARA ACOMODAR LAS IMAGENES EN EL GRID */
+@keyframes rotar {
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .uno {
   grid-column: 1 / 3;
   grid-row: 1 / 5; }
 
 .uno-b, .dos-b {
   overflow: hidden; }
+
+.uno-b:hover {
+  animation-name: rotar;
+  animation-duration: 1.5s; }
+
+.dos-b:hover {
+  animation-name: rotar;
+  animation-duration: 1.5s; }
 
 .dos {
   grid-column: 3 / 6;
@@ -151,7 +212,7 @@ img {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end; }
 
 /*MQ MOBILE*/
